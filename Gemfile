@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
+gem 'aws-sdk', '~> 2.2', '>= 2.2.32'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'rails_admin'
 gem 'devise', '~> 3.5', '>= 3.5.6'
