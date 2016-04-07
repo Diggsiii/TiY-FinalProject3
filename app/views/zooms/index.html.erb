@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Zooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zooms.each do |zoom| %>
+      <tr>
+        <td><%= zoom.description %></td>
+        <td><%= link_to 'Show', zoom %></td>
+        <td><%= link_to 'Edit', edit_zoom_path(zoom) %></td>
+        <td><%= link_to 'Destroy', zoom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zoom', new_zoom_path %>
