@@ -5675,3 +5675,11 @@ Processing by ZoomsController#show as HTML
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
   Rendered home/_header.html.erb (3.1ms)
 Completed 200 OK in 102ms (Views: 99.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 14:22:37 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 103.3ms | ActiveRecord: 0.2ms)
