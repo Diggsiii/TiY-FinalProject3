@@ -3455,3 +3455,1035 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (2.7ms)
   Rendered home/_header.html.erb (0.5ms)
 Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:27:12 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:27:13 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/about" for ::1 at 2016-04-07 12:27:14 -0500
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:27:15 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered zooms/_form.html.erb (1.5ms)
+  Rendered zooms/new.html.erb within layouts/application (4.2ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 93.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:27:16 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:27:17 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:29:01 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:31:01 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 87ms (Views: 86.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/zooms/4" for ::1 at 2016-04-07 12:31:04 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NjEqfHC3VJgCrgfp+eP3QqXJ64QpzlWLelgTrJv1+iI+kcTZydJsVWVSUeT+VgeWzu/6QCNuZuwnjKbiixhMuw==", "id"=>"4"}
+  [1m[35mZoom Load (0.4ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mZoom Load (0.2ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1  [["user_id", 3], ["id", 4]]
+Redirected to http://localhost:3000/zooms
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:31:04 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/_header.html.erb (2.8ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-07 12:31:07 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uuz8QONZ8QAkTQDfxPmMjgGosuHMUINfckgHiUQXsHqyTBLlWjzJzUOxVtLDTHxaao6jJcbwsDgvnLLHVPoG4w=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:31:07 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-07 12:31:09 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.2ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-07 12:31:16 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/3USv0YrMJL4usGdC3tVooHfTpVJUaFKj5iHirA3uk8fcn3g3jW3D+d7FvIFIS0IpBkxm2eBQlb3HMc9FNQ7Nw==", "user"=>{"email"=>"rd3@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rd3@me.com"]]
+Completed 401 Unauthorized in 80ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/3USv0YrMJL4usGdC3tVooHfTpVJUaFKj5iHirA3uk8fcn3g3jW3D+d7FvIFIS0IpBkxm2eBQlb3HMc9FNQ7Nw==", "user"=>{"email"=>"rd3@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 152ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-07 12:31:19 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xa/cHPMeBlUvVH6cZurqeosbV6Tm2INhrgS4dAzD4+29qLNDawCByDCVqfNosJLQrt0oqsgIYH3WgPjDqCBilQ==", "user"=>{"email"=>"rd3@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "rd3@me.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-04-07 17:20:11.016170"], ["current_sign_in_at", "2016-04-07 17:31:19.413670"], ["sign_in_count", 3], ["updated_at", "2016-04-07 17:31:19.415667"], ["id", 2]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:31:19 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:31:21 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.2ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/zooms/4" for ::1 at 2016-04-07 12:31:23 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ifw4aiveyaVLSMAFdCf6q7LGPyz7ZB0chTQXvQLewnfVJ05oYN7PKQ4ZDkyuEYZfy7LW9VuY9Q50Zi7qqQfZuQ==", "id"=>"4"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1  [["user_id", 2], ["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "zooms" WHERE "zooms"."id" = $1  [["id", 4]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/zooms
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:31:23 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.2ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:31:25 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:31:26 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentImageToZooms (20160407173854)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "zooms" ADD "image_file_name" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "zooms" ADD "image_content_type" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "zooms" ADD "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "zooms" ADD "image_updated_at" timestamp
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160407173854"]]
+  [1m[35m (13.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'zooms'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-04-07 12:39:34 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (15.3ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/zooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/application.self-2f41fad463be0dd4aad5b6a28e5cbba9808d235c9712eb92d54ebe95926bf053.css?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/zooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-07 12:39:34 -0500
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:39:40 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa9103c8d70>):
+  app/models/zoom.rb:3:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:18:in `new'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.5ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:39:40 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa8f2a636f8>):
+  app/models/zoom.rb:3:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:18:in `new'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.4ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:41:12 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.8ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa90eca9c20>):
+  app/models/zoom.rb:3:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:18:in `new'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.2ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:42:34 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 3.8ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa905545c58>):
+  app/models/zoom.rb:3:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:18:in `new'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.4ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:44:09 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa9103a0848>):
+  app/models/zoom.rb:3:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:18:in `new'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.1ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:44:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered zooms/_form.html.erb (1.0ms)
+  Rendered zooms/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 4.7ms)
+
+SyntaxError (/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+...append=  form_for(@zoom), html: { multipart: true } do |f| @...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...), html: { multipart: true } do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/zooms/new.html.erb:5:in `_app_views_zooms_new_html_erb__1605929975533140322_70138830057380'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:45:17 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 604ms (Views: 602.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:45:20 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.4ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:45:22 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered zooms/_form.html.erb (1.0ms)
+  Rendered zooms/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+...append=  form_for(@zoom), html: { multipart: true } do |f| @...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...), html: { multipart: true } do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/zooms/new.html.erb:5:in `_app_views_zooms_new_html_erb__1605929975533140322_70138850833980'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.9ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:45:22 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (1.1ms)
+  Rendered zooms/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+...append=  form_for(@zoom), html: { multipart: true } do |f| @...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...), html: { multipart: true } do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/zooms/_form.html.erb:30: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/zooms/new.html.erb:5:in `_app_views_zooms_new_html_erb__1605929975533140322_70138830057380'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.1ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:46:10 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered zooms/_form.html.erb (1.2ms)
+  Rendered zooms/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+...append=  form_for(@zoom), html: { multipart: true } do |f| @...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...), html: { multipart: true } do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/diggsiii/Desktop/Final3/app3/app/views/zooms/_form.html.erb:29: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+             ^):
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected tLABEL
+  app/views/zooms/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/zooms/_form.html.erb:29: syntax error, unexpected keyword_end, expecting end-of-input
+  app/views/zooms/new.html.erb:5:in `_app_views_zooms_new_html_erb__1605929975533140322_70138830057380'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.1ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:46:50 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (13.1ms)
+  Rendered zooms/new.html.erb within layouts/application (15.1ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 110ms (Views: 106.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/zooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/application.self-2f41fad463be0dd4aad5b6a28e5cbba9808d235c9712eb92d54ebe95926bf053.css?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/zooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-07 12:46:51 -0500
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:48:38 -0500
+Processing by ZoomsController#index as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `before_avatar_post_process' for #<Class:0x007f94ec16ab88>
+Did you mean?  before_post_process
+               before_image_post_process):
+  app/models/zoom.rb:4:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:11:in `index'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.2ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:48:39 -0500
+Processing by ZoomsController#index as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `before_avatar_post_process' for #<Class:0x007f94ea5fc8d8>
+Did you mean?  before_post_process
+               before_image_post_process):
+  app/models/zoom.rb:4:in `<class:Zoom>'
+  app/models/zoom.rb:1:in `<top (required)>'
+  app/controllers/zooms_controller.rb:11:in `index'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.6ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:49:18 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (12.3ms)
+Completed 200 OK in 103ms (Views: 97.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/application.self-2f41fad463be0dd4aad5b6a28e5cbba9808d235c9712eb92d54ebe95926bf053.css?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/zooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/zooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-07 12:49:18 -0500
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:49:20 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-07 12:49:21 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.9ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:49:23 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.4ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:49:25 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (3.0ms)
+  Rendered zooms/new.html.erb within layouts/application (5.6ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 100ms (Views: 86.9ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/zooms" for ::1 at 2016-04-07 12:49:49 -0500
+Processing by ZoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QOWlpvT0qo0nXOiu1bnpJ34vU5bQbPAUPdV536YJcOi0PtOkv/SsAWINJucPj5XTB1u6T3CQGAbMh0CIDdBrJg==", "zoom"=>{"description"=>"Dog ears :D", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f94f2b58568 @tempfile=#<Tempfile:/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/RackMultipart20160407-59470-170u3zb.JPG>, @original_filename="IMG_0418.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"zoom[image]\"; filename=\"IMG_0418.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Zoom Out Fam"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-1v8g0au.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]' -auto-orient -resize "300x300>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/19fe9cfdeaa9e1aea9f62c759a3dd4ef20160407-59470-10gszqh'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-a17rw5.JPG[0]' -auto-orient -resize "100x100>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/19fe9cfdeaa9e1aea9f62c759a3dd4ef20160407-59470-aq1q4b'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-59470-g76sok.JPG'
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "zooms" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["description", "Dog ears :D"], ["image_file_name", "IMG_0418.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 294942], ["image_updated_at", "2016-04-07 17:49:49.986001"], ["user_id", 2], ["created_at", "2016-04-07 17:49:50.463592"], ["updated_at", "2016-04-07 17:49:50.463592"]]
+  [1m[36m (12.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/zooms/5
+Completed 302 Found in 523ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/zooms/5" for ::1 at 2016-04-07 12:49:50 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mZoom Load (0.4ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered zooms/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 100ms (Views: 95.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:49:54 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms/5" for ::1 at 2016-04-07 12:49:56 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered zooms/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/zooms/5" for ::1 at 2016-04-07 12:51:08 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered zooms/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (12.2ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/application.self-2f41fad463be0dd4aad5b6a28e5cbba9808d235c9712eb92d54ebe95926bf053.css?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/zooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/zooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-07 12:51:08 -0500
+
+
+Started GET "/" for ::1 at 2016-04-07 12:51:12 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/about" for ::1 at 2016-04-07 12:51:17 -0500
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.9ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 12:51:18 -0500
+Processing by ZoomsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered zooms/_form.html.erb (1.4ms)
+  Rendered zooms/new.html.erb within layouts/application (3.3ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:51:18 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:51:19 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:51:20 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:51:24 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.4ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:51:24 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms/5" for ::1 at 2016-04-07 12:51:26 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered zooms/show.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.6ms)
