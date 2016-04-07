@@ -3101,3 +3101,357 @@ Processing by ZoomsController#show as HTML
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered home/_header.html.erb (1.9ms)
 Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for ::1 at 2016-04-07 12:24:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "zooms"
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT  "zooms".* FROM "zooms"  ORDER BY zooms.updated_at desc LIMIT 1[0m
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (12.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_navigation.html.haml (14.7ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/pjax.html.haml (5.2ms)
+Completed 200 OK in 11150ms (Views: 11001.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-3a176d66a05232a56b5fc761cd6ec7da5831163acab198587f5dc698601c1791.css?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-7a15aaeea6101fb1e648df5848917eddd01c5c193ffae1e121224ec7e96d8647.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-0eadfce64f22b8e533f96e573e738fdf5af614af5729c772838b8d1383739035.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-07 12:24:49 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-b707ff6592e3d3359ef77e61d1161a0370c5663c303eb0a5cec459fbf1fa7229.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for ::1 at 2016-04-07 12:24:50 -0500
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2016-04-07 12:24:54 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (91.1ms)
+Completed 200 OK in 116ms (Views: 107.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/zoom?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2016-04-07 12:25:04 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"zoom"}
+  [1m[35mZoom Load (0.4ms)[0m  SELECT  "zooms".* FROM "zooms"  ORDER BY zooms.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (2, 3)[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "zooms"
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (71.6ms)
+Completed 200 OK in 96ms (Views: 81.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/admin/zoom/2/delete?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2016-04-07 12:25:14 -0500
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"zoom", "id"=>"2"}
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1  ORDER BY "zooms"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/_delete_notice.html.haml (4.0ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (14.7ms)
+Completed 200 OK in 45ms (Views: 33.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admin/zoom/2/delete" for ::1 at 2016-04-07 12:25:18 -0500
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7pFPFCaHjCmIm3xOuT5FohzLNz16dK0UYLekxnr4+ULGquZ6f8m/cHeO/w9UQnC41U9GP9J4dMMVmvdCQZVfA==", "return_to"=>"http://localhost:3000/admin/zoom", "model_name"=>"zoom", "id"=>"2"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1  ORDER BY "zooms"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "zooms" WHERE "zooms"."id" = $1  [["id", 2]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/zoom
+Completed 302 Found in 12ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/zoom" for ::1 at 2016-04-07 12:25:19 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"zoom"}
+  [1m[35mZoom Load (0.4ms)[0m  SELECT  "zooms".* FROM "zooms"  ORDER BY zooms.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (2, 3)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "zooms"
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (34.9ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_navigation.html.haml (7.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/pjax.html.haml (3.4ms)
+Completed 200 OK in 225ms (Views: 220.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/zoom" for ::1 at 2016-04-07 12:25:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/zoom"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/diggsiii/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/diggsiii/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/diggsiii/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/diggsiii/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.2ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:28 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.3ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/_header.html.erb (3.0ms)
+Completed 200 OK in 175ms (Views: 173.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/zooms/4" for ::1 at 2016-04-07 12:25:33 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FzFCnKmvnphCVmWRYHZ8mmcrgxfISsHRUnqxEAPUo1Mfkaw5EMqmVSWqM5xnw4xODA2S08Lq8rYPrgReEzkVyg==", "id"=>"4"}
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1[0m  [["user_id", 3], ["id", 4]]
+Redirected to http://localhost:3000/zooms
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 26ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:33 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/zooms/3" for ::1 at 2016-04-07 12:25:36 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hTFkO7MVwqAKzbXVLjZ1m2gnvyfH9tUX3V/VZTWzGoeNkYqeCnD6bW0x49gpg4VPAwGu481W5nCAi2ArJV6sHg==", "id"=>"3"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mZoom Load (0.2ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1  [["user_id", 3], ["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "zooms" WHERE "zooms"."id" = $1  [["id", 3]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/zooms
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:36 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/zooms/4" for ::1 at 2016-04-07 12:25:39 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tjLSp5/bcFKBe64KtipCb86JbjNYwVMasdU13w88wlS+kjwCJr5In+aH+Aexn7K7pa9/91JhYH3sAYCRH9F0zQ==", "id"=>"4"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1  [["user_id", 3], ["id", 4]]
+Redirected to http://localhost:3000/zooms
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:39 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/zooms/4" for ::1 at 2016-04-07 12:25:44 -0500
+Processing by ZoomsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"o3QMcvh9Lkp+CGkOEfAgJDJlT+1BYlJwOGQFBBvElkar1OLXQRgWhxn0PwMWRdDwWUNeKUvCYRdlsLBKCykg3w==", "id"=>"4"}
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mZoom Load (0.2ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."user_id" = $1 AND "zooms"."id" = $2 LIMIT 1[0m  [["user_id", 3], ["id", 4]]
+Redirected to http://localhost:3000/zooms
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:44 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (2.9ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 12:25:46 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/_header.html.erb (2.4ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-07 12:25:48 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.1ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 12:25:55 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.2ms)
