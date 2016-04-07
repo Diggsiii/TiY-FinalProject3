@@ -5683,3 +5683,220 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (1.7ms)
   Rendered home/_header.html.erb (0.5ms)
 Completed 200 OK in 104ms (Views: 103.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 14:27:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (23.7ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 608ms (Views: 593.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/zooms/7" for ::1 at 2016-04-07 14:27:41 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mZoom Load (0.4ms)[0m  [1mSELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  Rendered zooms/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 124ms (Views: 102.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/application.self-2f41fad463be0dd4aad5b6a28e5cbba9808d235c9712eb92d54ebe95926bf053.css?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/zooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/zooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-07 14:27:41 -0500
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 14:27:43 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (35.2ms)
+  Rendered zooms/new.html.erb within layouts/application (37.6ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 150ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/zooms" for ::1 at 2016-04-07 14:27:49 -0500
+Processing by ZoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kppJXfhSEihZQ3kus3JDB+sZzoYhxsZcYxByPelIAN5mQT9fs1IUpBwSt2dpRD/zkm0nX4E6Lk6SQktqQpEbEA==", "zoom"=>{"description"=>"Hello, I'm Scott. Welcome to my app :D", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fe40ce8d058 @tempfile=#<Tempfile:/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/RackMultipart20160407-62882-ebwr97.JPG>, @original_filename="IMG_0418.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"zoom[image]\"; filename=\"IMG_0418.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Zoom Out Fam"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-14t61rh.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]' -auto-orient -resize "300x300>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/89d0ac42f58a92cd80c16a9c8bf4518020160407-62882-dfbf52'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-31c4r2.JPG[0]' -auto-orient -resize "100x100>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/89d0ac42f58a92cd80c16a9c8bf4518020160407-62882-76xa8l'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/d90d8796fc8d6a0a05c77624954cbfcf20160407-62882-emszzw.JPG'
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "zooms" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["description", "Hello, I'm Scott. Welcome to my app :D"], ["image_file_name", "IMG_0418.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 294942], ["image_updated_at", "2016-04-07 19:27:49.355156"], ["user_id", 2], ["created_at", "2016-04-07 19:27:49.830180"], ["updated_at", "2016-04-07 19:27:49.830180"]]
+  [1m[36m (13.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/zooms/8
+Completed 302 Found in 518ms (ActiveRecord: 19.9ms)
+
+
+Started GET "/zooms/8" for ::1 at 2016-04-07 14:27:49 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mZoom Load (0.2ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered zooms/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.6ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 14:27:52 -0500
+Processing by ZoomsController#index as HTML
+  [1m[35mZoom Load (0.3ms)[0m  SELECT "zooms".* FROM "zooms"
+  Rendered zooms/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.6ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 14:45:04 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (12.6ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 167.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 14:45:05 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.6ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (6.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 14:45:07 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (5.1ms)
+  Rendered zooms/new.html.erb within layouts/application (7.4ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 152ms (Views: 147.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-07 14:47:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (24.3ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 624ms (Views: 612.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/zooms" for ::1 at 2016-04-07 14:47:45 -0500
+Processing by ZoomsController#index as HTML
+  [1m[36mZoom Load (0.6ms)[0m  [1mSELECT "zooms".* FROM "zooms"[0m
+  Rendered zooms/index.html.erb within layouts/application (21.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 139ms (Views: 127.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/zooms/new" for ::1 at 2016-04-07 14:47:47 -0500
+Processing by ZoomsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/_form.html.erb (37.7ms)
+  Rendered zooms/new.html.erb within layouts/application (40.2ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 198ms (Views: 162.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/zooms" for ::1 at 2016-04-07 14:47:53 -0500
+Processing by ZoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QG3Cj1P4u45jwnigzA8uKKV62SvzwW7KmjXxg2C8qEa0trSNGPi9AiaTtukWOVLc3A4w8lM9hthrZ8jUy2WziA==", "zoom"=>{"description"=>"work!", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8982c5f928 @tempfile=#<Tempfile:/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/RackMultipart20160407-63605-rhvgsb.png>, @original_filename="Screen Shot 2016-04-06 at 7.29.19 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"zoom[image]\"; filename=\"Screen Shot 2016-04-06 at 7.29.19 PM.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Zoom Out Fam"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/9863f658a1a56e2fea8d8f6f76f5c33820160407-63605-sz6pf8.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]' -auto-orient -resize "300x300>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/61a3e9cb3f33e9c73bff58fbe98ad7a520160407-63605-a48qu7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]'
+Command :: convert '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/8142859a6a4ccf136fa3c8c0fb44ef5a20160407-63605-1e9dcjb.png[0]' -auto-orient -resize "100x100>" '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/61a3e9cb3f33e9c73bff58fbe98ad7a520160407-63605-k2tmz1'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9b/hm0cwl9150x027ltxskpsksw0000gn/T/9863f658a1a56e2fea8d8f6f76f5c33820160407-63605-edajnz.png'
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "zooms" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["description", "work!"], ["image_file_name", "Screen_Shot_2016-04-06_at_7.29.19_PM.png"], ["image_content_type", "image/png"], ["image_file_size", 7022772], ["image_updated_at", "2016-04-07 19:47:53.257347"], ["user_id", 2], ["created_at", "2016-04-07 19:47:54.470241"], ["updated_at", "2016-04-07 19:47:54.470241"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/zooms/9
+Completed 302 Found in 1290ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/zooms/9" for ::1 at 2016-04-07 14:47:54 -0500
+Processing by ZoomsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mZoom Load (0.3ms)[0m  SELECT  "zooms".* FROM "zooms" WHERE "zooms"."id" = $1 LIMIT 1  [["id", 9]]
+  Rendered zooms/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/_header.html.erb (2.7ms)
+Completed 200 OK in 81ms (Views: 75.4ms | ActiveRecord: 0.6ms)
