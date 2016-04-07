@@ -49,7 +49,7 @@ def index
    end
 
    def zoom_params
-     params.require(:zoom).permit(:description, :image)
+     params.require(:zoom).permit(:description, :image, :name)
    end
 
 

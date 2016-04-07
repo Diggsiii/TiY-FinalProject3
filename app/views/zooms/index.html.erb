@@ -1,29 +1,15 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Zooms</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @zooms.each do |zoom| %>
-      <tr>
-        <td><%= image_tag zoom.image.url(:thumb ) %></td>
-        <td><%= zoom.description %></td>
-        <td><%= link_to 'Show', zoom %></td>
-        <td><%= link_to 'Edit', edit_zoom_path(zoom) %></td>
-        <td><%= link_to 'Destroy', zoom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+        <%= link_to image_tag(zoom.image.url(:medium)), zoom %></br>
+        <%= zoom.description %></br>
+        <%= zoom.user.name if zoom.user %></br>
+
+        <% if zoom.user == current_user %>
+          <%= link_to 'Edit', edit_zoom_path(zoom) %>
+          <%= link_to 'Destroy', zoom, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
     <% end %>
-  </tbody>
-</table>
+
 
 <br>
-
-<%= link_to 'New Zoom', new_zoom_path %>

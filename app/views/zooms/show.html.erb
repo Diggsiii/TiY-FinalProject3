@@ -5,6 +5,10 @@
   <strong>Description:</strong>
   <%= @zoom.description %>
 </p>
+<%= @zoom.user.name %></br>
 
+
+<% if @zoom.user == current_user %>
 <%= link_to 'Edit', edit_zoom_path(@zoom) %> |
+<% end %>
 <%= link_to 'Back', zooms_path %>
