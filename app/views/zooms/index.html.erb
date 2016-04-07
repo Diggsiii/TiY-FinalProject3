@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
@@ -13,6 +14,7 @@
   <tbody>
     <% @zooms.each do |zoom| %>
       <tr>
+        <td><%= image_tag zoom.image.url(:thumb ) %></td>
         <td><%= zoom.description %></td>
         <td><%= link_to 'Show', zoom %></td>
         <td><%= link_to 'Edit', edit_zoom_path(zoom) %></td>
