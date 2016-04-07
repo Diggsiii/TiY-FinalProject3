@@ -1,15 +1,23 @@
-
+<div id="zooms" class="transitions-enabled">
     <% @zooms.each do |zoom| %>
 
-        <%= link_to image_tag(zoom.image.url(:medium)), zoom %></br>
-        <%= zoom.description %></br>
+    <div class="box">
+        <div class="panel panel-default">
+            <%= link_to image_tag(zoom.image.url(:medium)), zoom %></br>
+        <div class="panel-body">
+
+            <%= zoom.description %></br>
         <%= zoom.user.name if zoom.user %></br>
+</div>
+<% if zoom.user == current_user %>
+<div class="panel-footer">
+    <%= link_to 'Edit', edit_zoom_path(zoom) %>
+    <%= link_to 'Destroy', zoom, method: :delete, data: { confirm: 'Are you sure?' } %>
+</br>
+</div>
+<% end %>
 
-        <% if zoom.user == current_user %>
-          <%= link_to 'Edit', edit_zoom_path(zoom) %>
-          <%= link_to 'Destroy', zoom, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <% end %>
-    <% end %>
-
-
-<br>
+</div>
+</div>
+<% end %>
+</div>
