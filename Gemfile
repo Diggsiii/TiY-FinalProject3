@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
+ gem 'will_paginate-bootstrap', '~> 1.0.1'
+gem 'will_paginate', '~> 3.1'
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'rails_admin'

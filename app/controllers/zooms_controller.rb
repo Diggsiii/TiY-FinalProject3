@@ -8,7 +8,7 @@ class ZoomsController < ApplicationController
 #  # GET /zooms.json
 
 def index
-   @zooms = Zoom.all
+   @zooms = Zoom.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
  end
 
  def show
