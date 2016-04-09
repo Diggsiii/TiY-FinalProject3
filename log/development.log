@@ -32649,3 +32649,26 @@ Processing by ZoomsController#index as HTML
   Rendered zooms/index.html.erb within layouts/application (10.5ms)
   Rendered home/_header.html.erb (0.4ms)
 Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:01:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZoomsController#index as HTML
+  Rendered home/_jumbo.html.erb (1.0ms)
+  [1m[35mZoom Load (7.1ms)[0m  SELECT  "zooms".* FROM "zooms"  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "zooms"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered zooms/index.html.erb within layouts/application (97.1ms)
+  Rendered home/_header.html.erb (1.2ms)
+Completed 200 OK in 829ms (Views: 789.8ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/home/about" for ::1 at 2016-04-08 21:01:09 -0500
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (1.8ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 91ms (Views: 90.7ms | ActiveRecord: 0.0ms)
