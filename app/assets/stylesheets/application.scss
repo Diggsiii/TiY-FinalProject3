@@ -26,8 +26,11 @@ $pagination-active-bg: #cb2027;
 $pagination-active-border: #cb2027;
 
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
  .center {
    text-align: center;
@@ -36,4 +39,8 @@ $pagination-active-border: #cb2027;
 
 .indexP {
   color: #FFFFFF;
+}
+
+.p1 {
+  font-size: 20px;
 }

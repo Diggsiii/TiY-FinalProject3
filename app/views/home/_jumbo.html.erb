@@ -1,14 +1,10 @@
+
+
 <div class="jumbotron center">
 
-    <h1>Welcome to "Zoom-it"</h1>
-
+    <h1>Welcome to Zoom-it <i class="fa fa-smile-o"></i></h1>
     <div class="indexP">
-        <p>The home of the all the cool sh*t that goes down.</p>
-
-        <p>Live it</p>
-        <p>Zoom it</p>
-        <p>Share it</p>
-
+        <p>Glad you stopped by! If you haven't done so already, please sign in below.</p>
     </div>
     <% if user_signed_in? %>
     <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-primary' %>
