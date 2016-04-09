@@ -27964,3 +27964,37 @@ Processing by ZoomsController#index as HTML
   Rendered zooms/index.html.erb within layouts/application (10.6ms)
   Rendered home/_header.html.erb (0.3ms)
 Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 19:47:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZoomsController#index as HTML
+  Rendered home/_jumbo.html.erb (1.1ms)
+  [1m[35mZoom Load (0.9ms)[0m  SELECT  "zooms".* FROM "zooms"  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "zooms"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered zooms/index.html.erb within layouts/application (83.3ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 8933ms (Views: 8901.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 19:47:21 -0500
+Processing by ZoomsController#index as HTML
+  Rendered home/_jumbo.html.erb (0.2ms)
+  [1m[36mZoom Load (0.4ms)[0m  [1mSELECT  "zooms".* FROM "zooms"  ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "zooms"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered zooms/index.html.erb within layouts/application (9.1ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 91.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-038a12eb5a4fd5fb991fc7ac6e5f579236eeaf8f09f4a371ff49c8de5b0d8dba.css?body=1" for ::1 at 2016-04-08 19:47:22 -0500
