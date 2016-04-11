@@ -15,6 +15,7 @@
             <% end %>
         </div>
 
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -22,7 +23,7 @@
 
                 <li><%= link_to 'Home', root_path %></li>
                 <li><%= link_to 'About', home_about_path %></li>
-
+                <li><%= link_to 'CNN', home_cnn_path %></li>
                 <% if user_signed_in? %>
                 <li><%= link_to "New Zoom", new_zoom_path %></li>
                 <li><%= link_to "My Zooms", zooms_path %></li>
