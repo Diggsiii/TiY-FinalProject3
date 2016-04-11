@@ -5,6 +5,6 @@ class HomeController < ApplicationController
   def about
   end
 
-  def cnn
+  def vice
   end
 end
